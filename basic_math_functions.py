@@ -5,10 +5,12 @@ def multiply(x: float, y: float) -> float:
     return x * y
 
 def square(x: float) -> float:
-    return x * x
+    return multiply(x,x)
 
 def add_square(x: float, y: float) -> float:
-    return x * x + y * y
+    x_squared = square(x)
+    y_squared = square(y)
+    return add(x_squared, y_squared)
 a = add(3,4)
 b = multiply(4,6)
 c = square(2)
